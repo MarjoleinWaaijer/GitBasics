@@ -1,0 +1,402 @@
+.header{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 3vw;
+  text-shadow: 2px 2px black;
+
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+figure{
+  margin: 0px;
+}
+
+.supermarkt{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+.groente{
+   background-color: #99FFCC;
+
+}
+
+.groente .tekst{
+  float: left;
+  margin: 10px;
+  font-size: 1.5vw;
+  margin-left: 15px;
+}
+
+.groente img{
+  height: auto;
+  width: 50%;
+  margin: 5px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.brood{
+  background-color: #FFE5CC;
+}
+
+.brood .tekst{
+  float: left;
+  margin: 10px;
+  font-size: 1.5vw;
+  margin-left: 15px;
+}
+
+.brood img{
+  height: auto;
+  width: 50%;
+  margin: 5px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.fruit{
+    background-color:#FFFFCC;
+}
+
+.fruit .tekst{
+  float: left;
+  margin: 10px;
+  font-size: 1.5vw;
+  margin-left: 15px;
+}
+
+.fruit img{
+  height: auto;
+  width: 50%;
+  margin: 5px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.vlees{
+    background-color:#FFCCE5;
+
+}
+
+.vlees .tekst{
+  float: left;
+  margin: 10px;
+  font-size: 1.5vw;
+  margin-left: 15px;
+}
+
+.vlees img{
+  height: auto;
+  width: 50%;
+  margin: 5px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 400px){
+
+  .footer{
+    grid-column: 1/3;
+  
+    display: grid;
+    grid-template-columns: 50% 50%; 
+      
+    grid-gap: 10px;
+  
+    background-color: #333;
+    color: white;
+  }
+
+  .adres{
+    grid-column: 1/3;
+  }
+
+  .contact{
+    grid-column: 1/3;
+  }
+
+  .openingstijden{
+    grid-column: 1/3;
+  }
+
+  .logo{
+    grid-column: 1/3;
+  }
+
+}
+
+@media (max-width: 700px){
+  /* menu */
+  #menu{
+
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .bar{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1{
+    transform: translateY(-4px);
+  }
+
+  #bar3{
+    transform: translateY(4px);
+  }
+
+  .nav li a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav li a:hover{
+    font-weight: bold;
+  }
+
+  .nav li{
+    list-style: none;
+    padding: 16px 0;
+  }
+
+  .nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+  }
+
+  .menu-bg, #menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle,#333,#333);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  #menu-bar{
+    z-index: 2;	
+  }
+
+  .change-bg{
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%,-30%);
+  }
+
+  .change .bar{
+    background-color: white;
+  }
+
+  .change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+  }
+
+  .change #bar2{
+    opacity: 0;
+  }
+
+  .change{
+    display: block;
+
+  }
+
+  .grid-box{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+      
+    grid-gap: 10px;
+  }
+  
+
+  /*grid indeling*/
+
+  .header{
+    grid-column: 1 / 3;
+  }
+
+  #menu-bar{
+
+    grid-column: 1 / 3;
+  }
+
+  .groente{
+    grid-column: 1 / 3;
+  }
+
+  .brood{
+    grid-column: 1 /  3;
+  }
+
+  .fruit{
+    grid-column: 1/ 3;
+  }
+
+  .vlees{
+    grid-column: 1 / 3;
+  }
+
+  .groente .tekst{
+    font-size: 3vw;
+  }
+
+  .brood .tekst{
+    font-size: 3vw;
+  }
+
+  .fruit .tekst{
+    font-size: 3vw;
+  }
+
+  .vlees .tekst{
+    font-size: 3vw;
+  }
+
+  .footer{
+    grid-column: 1/3;
+  
+    display: grid;
+    grid-template-columns: 50% 50%; 
+      
+    grid-gap: 10px;
+  
+    background-color: #333;
+    color: white;
+  }
+
+  .logo img{
+    max-width: 80px;
+  }
+
+}
+
+
+@media (min-width: 700px){
+
+/* grid */
+  .grid-box{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+      
+    grid-gap: 10px;
+  }
+  
+  body{
+    width: 80%;
+    margin: auto;
+  }
+
+  /*grid indeling*/
+
+  .header{
+    grid-column: 1 / 5;
+  }
+
+  #menu-bar{
+
+    grid-column: 1 / 5;
+  }
+
+  .groente{
+    grid-column: 1 / 3;
+  }
+
+  .brood{
+    grid-column: 1 /  3;
+  }
+
+  .fruit{
+    grid-column: 3/ 5;
+  }
+
+  .vlees{
+    grid-column: 3 / 5;
+  }
+
+  .footer{
+    grid-column: 1/5;
+  
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+      
+    grid-gap: 10px;
+  
+    background-color: #333;
+    color: white;
+  }
+
+  .logo img{
+    max-width: 80px;
+  }
+
+
+/* navigatie pc en grotere tablet*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+    
+    .active {
+      background-color: #4CAF50;
+    }
+}
+
+@media (min-width: 1200px){
+  .logo img{
+    max-width: 100px;
+  }
+}
+
+
+
